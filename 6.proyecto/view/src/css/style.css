@@ -1,0 +1,117 @@
+html,body{
+	position: absolute;
+	width: 100vw;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	background: #f9f9f9;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+
+
+.container{
+	position: relative;
+	width: 90vw;
+	height: 90%;
+	border-radius: 10px;
+	background: white;
+	box-shadow:0px 0px 5px rgba(0,0,0,0.3);
+	overflow: hidden;
+}
+
+
+.newNote{
+	margin-top: 10px;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+
+.newNote input{
+	border:0;
+	padding: 5px;
+	border-bottom: 2px solid skyblue;
+	max-width: 500px;
+	width: 100%;
+	margin-left: 10px;
+	outline: none;
+	color: gray;
+}
+
+.newNote button{
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 10px;
+	border:0;
+	background: skyblue;
+	color: white;
+	max-width: 100px;
+	width: 100%;
+	border-radius: 20px;
+	outline: none;
+	cursor: pointer;
+}
+
+
+
+.containerNote{
+	position: relative;
+	height: calc(100% - 100px);
+	background: white;
+	text-align: center;
+	overflow-y: auto;
+	/*padding-bottom: 100px;*/
+}
+
+.note{
+	
+    display: inline-block;
+	position: relative;
+	width: 23%;
+	min-width: 150px;
+	margin: 4px;
+	margin-bottom: 15px;
+	height: 100px;
+	padding: 2px;
+	background: white;
+	border-radius: 5px;
+	box-shadow:0px 0px 5px rgba(0,0,0,0.3);
+}
+
+
+.note p{
+	padding: 0;
+	margin: 0;
+	color: gray;
+	font-size: 13px;
+	display: inline-flex;
+}
+
+.note div{
+
+	position: absolute;
+	float: left;
+	bottom: 0;
+	color: skyblue;
+}
+
+.note button{
+	position: absolute;
+	right: 2px;
+	bottom: 2px;
+	background: #f55959;
+	color: white;
+	border:0;
+	border-radius: 5px;
+	margin-left: 5px;
+	cursor: pointer;
+	outline: none;
+}
